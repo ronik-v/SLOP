@@ -12,7 +12,7 @@
         </div>
     </div>
 	<div class="start">
-		<h3>To start<h3>
+		<h3>To start</h3>
 		<p>Add all the necessary information to the config and also create a database whose name is also written in the config file</p><br>
 	</div>
     <div class="examples">
@@ -25,13 +25,13 @@ from SLOP.db import Table
 
 
 class Employee(Table):
-	table_name = 'Employee'
-	fields: dict = {
-		'id': BigSerial(null_table=True, primary_key=True),
-		'name': Varchar(size=30, null_table=True, primary_key=False),
-		'dob': Date(null_table=True, primary_key=False),
-		'bio': Text(null_table=False, primary_key=False)
-	}</pre>
+		table_name = 'Employee'
+		fields: dict = {
+			'id': BigSerial(null_table=True, primary_key=True),
+			'name': Varchar(size=30, null_table=True, primary_key=False),
+			'dob': Date(null_table=True, primary_key=False),
+			'bio': Text(null_table=False, primary_key=False)
+		}</pre>
             <pre>Employee.create_table()</pre>
             </li>
 			<li>
